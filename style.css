@@ -972,7 +972,7 @@ footer {
     }
 
     .enlace-primario {
-        background-color: var(--color-grisCeniza); /* Ej: Blanco */
+        background-color: var(--color-texto); /* Ej: Blanco */
         color: var(--color-secundario); /* Ej: Negro */
     }
 
@@ -1000,3 +1000,78 @@ footer {
     }
 }
 
+/*El grid de secction se vuelve 1 columna*/
+@media (max-width: 566px) {
+    .soluciones-seccion {
+        padding: 32px 16px; /* Reducimos el padding para aprovechar más espacio */
+    }
+
+    .soluciones-titulo h2 {
+        font-size: 24px; /* Título más chico */
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .soluciones-subtitulo p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 24px auto;
+    }
+
+    /* ========================================= */
+    /* GRID DE 1 COLUMNA */
+    /* ========================================= */
+    .soluciones-titulo h2 {
+        font-size: 35px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .soluciones-subtitulo p {
+        font-size: 20px;
+        line-height: 18px;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 24px auto;
+    }
+
+    .contenedor-tarjeta-producto {
+        display: grid;
+        grid-template-columns: 1fr; /* ¡Una sola columna! */
+        gap: 20px; /* Espacio vertical entre cada tarjeta */
+    }
+
+    .articulo-tarjeta {
+        width: 100%; /* Cada tarjeta ocupa todo el ancho disponible */
+    }
+
+    /* Ajustes internos de la tarjeta para que se vea bien en móvil */
+    .imagen-producto {
+        height: 250px; /* Imagen un poco más alta para que se vea mejor */
+    }
+
+    .articulo-tarjeta h3 {
+        font-size: 18px;
+        margin: 16px 16px 8px 16px;
+    }
+
+    .descripcion-producto {
+        font-size: 14px;
+        margin: 0 16px 12px 16px;
+    }
+
+    .articulo-tarjeta ul {
+        font-size: 13px;
+        margin: 0 16px 16px 16px;
+        line-height: 20px;
+    }
+
+    .boton-tarjeta {
+        font-size: 14px;
+        padding: 10px 16px 16px 16px;
+        width: fit-content; /* Botón compacto */
+        margin: 0 auto 16px auto; /* Centrado */
+    }
+}
