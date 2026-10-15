@@ -962,7 +962,41 @@ footer {
 
 /*cambia footer a flex: colum
  y botones del hero-contenido*/
-@media (max-width: 614px) {
-  
+@media (max-width: 612px) {
+    .hero-enlaces {
+        display: flex;
+        flex-direction: column; /* Aqui el cambio de esta media query */
+        gap: 12px; /* Espacio horizontal entre los dos botones */
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .enlace-primario {
+        background-color: var(--color-grisCeniza); /* Ej: Blanco */
+        color: var(--color-secundario); /* Ej: Negro */
+    }
+
+    .hero-enlaces {
+        display: flex;
+        flex-direction: column; /* Aqui el cambio de esta media query */
+        gap: 12px; /* Espacio horizontal entre los dos botones */
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    footer {
+        padding: 20px 16px; /* Menos padding */
+    }
+
+    .footer-contenedor {
+        display: flex;
+        flex-direction: column; /* Aqui el cambio de esta media query */
+        align-items: center;
+        margin-top: 8px;
+    }
+ 
+    .footer-redes {
+        gap:18px;
+    }
 }
 
